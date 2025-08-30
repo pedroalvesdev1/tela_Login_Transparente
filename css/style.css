@@ -12,7 +12,7 @@ body {
     background-position: center;
 }
 
-.caixaW{
+.caixaW {
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
@@ -23,20 +23,20 @@ body {
     padding: 30px 40px;
 }
 
-.caixaW h1{
+.caixaW h1 {
     font-size: 36px;
     text-align: center;
     font-weight: 600;
 }
 
-.caixaW .inputBox{
+.caixaW .inputBox {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.inputBox input{
+.inputBox input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -49,11 +49,11 @@ body {
     padding: 0px 0px 0px 20px;
 }
 
-.inputBox input::placeholder{
+.inputBox input::placeholder {
     color: #fff;
 }
 
-.inputBox i{
+.inputBox i {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -61,31 +61,32 @@ body {
     font-size: 25px;
 }
 
-.caixaW .lembreDeMim{
+.caixaW .lembreDeMim {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
-.lembreDeMim label{
+
+.lembreDeMim label {
     display: flex;
 }
 
-.lembreDeMim label input{
+.lembreDeMim label input {
     accent-color: #fff;
     margin-right: 3px;
 }
 
-.lembreDeMim a{
+.lembreDeMim a {
     color: #fff;
     text-decoration: none;
 }
 
-.lembreDeMim a:hover{
+.lembreDeMim a:hover {
     text-decoration: underline;
 }
 
-.caixaW .btn{
+.caixaW .btn {
     width: 100%;
     height: 45px;
     background: #fff;
@@ -99,26 +100,59 @@ body {
     font-weight: 600;
 }
 
-.caixaW .btn:hover{
+.caixaW .btn:hover {
     background: darkmagenta;
     transition: all 0.3s;
     color: #fff;
 }
 
-.caixaW .registrese{
+.caixaW .registrese {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
 
 }
 
-.registrese p a{
+.registrese p a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.registrese p a:hover{
+.registrese p a:hover {
     text-decoration: underline;
+}
 
+@media (max-width:480px) {
+    .caixaW {
+        width: 100%;
+    }
+
+
+    .caixaW .lembreDeMim {
+        display: flex;
+        align-items: center;
+
+    }
+    .inputBox input {
+        font-size: 12px;
+        
+    }
+    .inputBox i {
+        font-size: 20px;
+    }
+
+    .lembreDeMim label {
+        font-size: 10px;
+        align-items: center;
+    }
+
+    .lembreDeMim a {
+        font-size: 10px;
+
+    }
+
+    .registrese p  {
+       font-size: 10px;
+    }
 }
